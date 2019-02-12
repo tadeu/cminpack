@@ -14,7 +14,8 @@
 #ifdef __APPLE__
 #include <Accelerate/Accelerate.h>
 #else
-#include <cblas.h>
+//#include <cblas.h>
+#include <mkl_blas.h>
 #endif
 #define __cminpack_enorm__(n,x) cblas_dnrm2(n,x,1)
 #else
